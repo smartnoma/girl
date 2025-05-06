@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To'y Taklifnomasi</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-animation">
+      <div class="floating-hearts"></div>
+      <div class="floating-flowers"></div>
+    </div>
+
+    <div class="page-container">
+      <div class="invitation-container">
+        <div class="border-decoration"></div>
+
+        <div class="text-logo">
+          <div class="logo-title">SMARTNOMA</div>
+          <div class="logo-slogan">O'zbekona an'anaga zamonaviy ruh</div>
+        </div>
+
+        <h1>TO‘Y TAKLIFNOMASI</h1>
+        <div class="heart-icon">
+          <i class="fas fa-heart"></i>
+        </div>
+
+        <h2>Ali <span class="and">&</span> Dilfuza</h2>
+        <div class="divider"></div>
+
+        <p>Hurmatli <span class="highlight">do'stimiz</span>,</p>
+        <p>
+          Sizni va oilangizni hayotimizdagi eng quvonchli kun — to'y
+          marosimimizga taklif etamiz.
+        </p>
+        <p>
+          Biz bilan birga ushbu unutilmas lahzalarni nishonlab, quvonchimizga
+          sherik bo'lishingizni istaymiz.
+        </p>
+
+        <div class="date-time">
+          2025-yil 20-may, payshanba kuni<br />
+          Soat 18:00 dan
+        </div>
+
+        <div class="location">
+          "Guliston" to'y saroyi<br />
+          Toshkent shahri, Mirzo Ulug'bek tumani<br />
+          Navoiy ko'chasi, 45-uy
+        </div>
+
+        <div class="button-container">
+          <button class="action-button" id="location-btn">
+            <i class="fas fa-map-marker-alt"></i> Manzil
+          </button>
+          <button class="action-button" id="payment-btn">
+            <i class="fas fa-gift"></i> To'yona
+          </button>
+        </div>
+
+        <div class="social-container">
+          <div class="social-icons">
+            <a href="https://t.me/smartnoma" target="_blank">
+              <i class="fab fa-telegram"></i>
+            </a>
+            <a href="https://instagram.com/smartnoma" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://twitter.com/smartnoma" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Location Modal -->
+    <div class="modal" id="location-modal">
+      <div class="modal-content">
+        <span class="close-modal" id="close-location">&times;</span>
+        <h3><i class="fas fa-map-marker-alt"></i> To'y Joylashuvi</h3>
+        <div class="map-placeholder">
+          <i class="fas fa-map-marked-alt"></i>
+        </div>
+        <p>"Guliston" to'y saroyi, Toshkent shahri</p>
+        <a
+          href="https://www.google.com/maps/place/Guliston+To'y+Saroyi+Toshkent"
+          target="_blank"
+          class="action-button"
+        >
+          <i class="fas fa-directions"></i> Yo'nalish
+        </a>
+
+        <button class="exit-button">
+          <i class="fas fa-times"></i> Chiqish
+        </button>
+      </div>
+    </div>
+
+    <!-- Payment Modal -->
+    <div class="modal" id="payment-modal">
+      <div class="modal-content">
+        <span class="close-modal" id="close-payment">&times;</span>
+        <h3><i class="fas fa-gift"></i> To'yona uchun ma'lumotlar</h3>
+        <div class="card-display">
+          <div class="card-details">
+            <div class="card-owner">Dilfuza Qodirova</div>
+            <div class="card-number" id="cardNumber">8600 9876 5432 1098</div>
+          </div>
+          <button class="copy-btn" onclick="copyCardNumber()">
+            📋 Nusxalash
+          </button>
+        </div>
+        <button class="exit-button">
+          <i class="fas fa-times"></i> Chiqish
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
